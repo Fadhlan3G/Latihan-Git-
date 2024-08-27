@@ -1,0 +1,181 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desain body dan font dasar */
+body {
+    font-family: Montserrat, 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #f6f2af;
+    color: #f6f2af;
+    padding: 0 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #7b3933;
+    color: #f6f2af;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigasi styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #7f292c;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: #f6f2af;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #542f31;
+}
+
+/* Dropdown styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #ee8484;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+/* Form kontak styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    background-color: #7f292c;
+    color: #f6f2af;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styling */
+footer {
+    background-color: #542f31;
+    color: #f6f2af;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons a {
+        font-size: 24px; /* Ukuran ikon media sosial lebih kecil di ponsel */
+    }
+
+    header, main, footer {
+        padding: 10px;
+    }
+}
+
+/* Styling ikon media sosial di footer */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #f6f2af; /* Warna ikon */
+    text-decoration: none;
+    font-size: 32px; /* Ukuran ikon */
+    margin: 0 15px; /* Jarak antara ikon */
+    transition: color 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff0000; /* Warna saat ikon dihover */
+}
+
+/* Jika Anda ingin membuat ikon TikTok lebih besar juga */
+.social-icons .fa-tiktok {
+    font-size: 32px; /* Ukuran ikon TikTok */
+}
